@@ -1,7 +1,7 @@
 # Faster-ILOD
 This project hosts the code for implementing the Faster ILOD algorithm for incremental object detection, as presented in our paper:
 
-Faster ILOD: Incremental Learning for Object Detectors based on Faster RCNN;
+## Faster ILOD: Incremental Learning for Object Detectors based on Faster RCNN;
 
 Can Peng, Kun Zhao and Brian C. Lovell;
 
