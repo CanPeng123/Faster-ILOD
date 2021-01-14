@@ -8,9 +8,6 @@ import torch.distributed as dist
 from torch import nn
 import numpy as np
 
-from maskrcnn_benchmark.analysis.draw import display_soften_result
-from maskrcnn_benchmark.analysis.draw import display_soften_proposal
-from maskrcnn_benchmark.analysis.draw import draw_feature_mask
 from maskrcnn_benchmark.modeling.rpn.utils import permute_and_flatten
 from maskrcnn_benchmark.layers import smooth_l1_loss
 
