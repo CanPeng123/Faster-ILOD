@@ -1,6 +1,6 @@
 MODEL:
   META_ARCHITECTURE: "GeneralizedRCNN"
-  WEIGHT: "/home/s4401040/nas_home/incremental_learning_ResNet50_C4/RPN_first_10_classes_40k_steps/model_trim_optimizer_iteration.pth"
+  WEIGHT: "/home/incremental_learning_ResNet50_C4/RPN_first_10_classes_40k_steps/model_trim_optimizer_iteration.pth"
   BACKBONE:
     CONV_BODY: "R-50-C4"
   RESNETS:
@@ -42,5 +42,5 @@ SOLVER:
   MOMENTUM: 0.9
 TEST: # testing strategy
   IMS_PER_BATCH: 1 # number of images per batch
-OUTPUT_DIR: "/home/s4401040/nas_home/incremental_learning_ResNet50_C4/10_10_v8" # path to store the result
-TENSORBOARD_DIR: "/home/s4401040/nas_home/incremental_learning_ResNet50_C4/10_10_v8/tensorboard"
+OUTPUT_DIR: "/home/incremental_learning_ResNet50_C4/10_10" # path to store the result
+TENSORBOARD_DIR: "/home/incremental_learning_ResNet50_C4/10_10/tensorboard"
