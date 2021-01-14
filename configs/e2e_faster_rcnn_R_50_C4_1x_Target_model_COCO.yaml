@@ -1,7 +1,7 @@
 MODEL:
   META_ARCHITECTURE: "GeneralizedRCNN"
 #  WEIGHT: "catalog://ImageNetPretrained/MSRA/R-50"
-  WEIGHT: "/home/s4401040/nas_home/incremental_learning_ResNet50_C4/coco_v2_alphabetical_order/first_70/model_trim_optimizer_iteration.pth"
+  WEIGHT: "/home/incremental_learning_ResNet50_C4/coco/first_70/model_trim_optimizer_iteration.pth"
   BACKBONE:
     CONV_BODY: "R-50-C4"
   RESNETS:
@@ -43,5 +43,5 @@ SOLVER:
 TEST: # testing strategy
   IMS_PER_BATCH: 1 # number of images per batch
   COCO_ALPHABETICAL_ORDER: True
-OUTPUT_DIR: "/home/s4401040/nas_home/incremental_learning_ResNet50_C4/coco_v2_alphabetical_order/Faster_RCNN_w_RCN_RPN_Dist_70_10" # path to store the result
-TENSORBOARD_DIR: "/home/s4401040/nas_home/incremental_learning_ResNet50_C4/coco_v2_alphabetical_order/Faster_RCNN_w_RCN_RPN_Dist_70_10/tensorboard"
+OUTPUT_DIR: "/home/incremental_learning_ResNet50_C4/coco/70_10" # path to store the result
+TENSORBOARD_DIR: "/home/incremental_learning_ResNet50_C4/coco/70_10/tensorboard"
