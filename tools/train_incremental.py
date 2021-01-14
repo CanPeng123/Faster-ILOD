@@ -30,9 +30,6 @@ from maskrcnn_benchmark.utils.miscellaneous import mkdir  # related to folder cr
 from maskrcnn_benchmark.utils.comm import get_world_size
 from maskrcnn_benchmark.utils.metric_logger import MetricLogger
 from tensorboardX import SummaryWriter
-from maskrcnn_benchmark.analysis.draw import display_soften_result
-from maskrcnn_benchmark.analysis.draw import display_soften_proposal
-from maskrcnn_benchmark.analysis.draw import draw_feature_mask
 from maskrcnn_benchmark.distillation.distillation import calculate_rpn_distillation_loss
 from maskrcnn_benchmark.distillation.distillation import calculate_feature_distillation_loss
 from maskrcnn_benchmark.distillation.distillation import calculate_roi_distillation_losses
