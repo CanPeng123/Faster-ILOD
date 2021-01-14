@@ -7,13 +7,13 @@ from maskrcnn_benchmark.utils.c2_model_loading import load_c2_format
 parser = argparse.ArgumentParser(description="Trim Detection weights and save in PyTorch format.")
 parser.add_argument(
     "--pretrained_path",
-    default="/home/incremental_learning_ResNet50_C4/coco_v2_alphabetical_order/multi_step/75_1_1_1_1_1_v3/step_4/model_final.pth",
+    default="/home/incremental_learning_ResNet50_C4/coco/multi_step/75_1_1_1_1_1/step_4/model_final.pth",
     help="path to load the pretrained weight",
     type=str,
 )
 parser.add_argument(
     "--save_path",
-    default="/home/incremental_learning_ResNet50_C4/coco_v2_alphabetical_order/multi_step/75_1_1_1_1_1_v3/step_4/model_trim_optimizer_iteration.pth",
+    default="/home/incremental_learning_ResNet50_C4/coco/multi_step/75_1_1_1_1_1/step_4/model_trim_optimizer_iteration.pth",
     help="path to save the converted model",
     type=str,
 )
