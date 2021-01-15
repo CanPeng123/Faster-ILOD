@@ -60,11 +60,17 @@ The code for calculating feature, RPN, and RCN distillation losses are written [
 ## Citations
 
 Please consider citing the following paper in your publications if it helps your research. 
+
 @article{peng2020faster,
+
   title={Faster ILOD: Incremental Learning for Object Detectors based on Faster RCNN},
+  
   author={Peng, Can and Zhao, Kun and Lovell, Brian C},
+  
   journal={Pattern Recognition Letters},
+  
   year={2020}
+  
 }
 
 ## Acknowledgements
