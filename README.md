@@ -39,7 +39,7 @@ The code for loading VOC dataset to the model is written on the file [Faster-ILO
 
 4. Please modify the setting for the name of excluded categories (categories not used, since VOC has 20 categories) on NAME_EXCLUDED_CLASSES on the file [e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml).
 
-5. Please modify the number of detecting categories on NUM_CLASSES on the file [e2e_faster_rcnn_R_50_C4_1x_Source_model.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Source_model.yaml) (number of old categories) and [e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml) (number of old and new categories), repectively. 
+5. Please modify the number of detecting categories on NUM_CLASSES on the file [e2e_faster_rcnn_R_50_C4_1x_Source_model.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Source_model.yaml) (number of old categories) and the file [e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml) (number of old and new categories), repectively. 
 
 ### COCO dataset training
 
@@ -51,9 +51,7 @@ The code for loading COCO dataset to the model is written on the file [Faster-IL
 
 1. Please modify the path for putting COCO dataset on the file [Faster-ILOD/maskrcnn_benchmark/config/paths_catalog.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/config/paths_catalog.py).
 
-2. The categories for COCO dataset training are added in alphabetical orders. Please modify the setting for number of classes (NUM_CLASSES) on the file [e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml)
-
-3. Please modify the number of detecting categories on NUM_CLASSES on the file [e2e_faster_rcnn_R_50_C4_1x_Source_model_COCO.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Source_model_COCO.yaml) (number of old categories) and [e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml) (number of old and new categories), repectively. 
+2. The categories for COCO dataset training are added in alphabetical orders. Please modify the number of detecting categories on NUM_CLASSES on the file [e2e_faster_rcnn_R_50_C4_1x_Source_model_COCO.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Source_model_COCO.yaml) (number of old categories) and [e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml) (number of old and new categories), repectively. 
 
 ## Distillation Loss
 
