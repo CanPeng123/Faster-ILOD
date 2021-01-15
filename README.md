@@ -55,7 +55,7 @@ Put the number of classes on NUM_CLASSES. The categories are added in alphabetic
 
 The code for loading COCO dataset to the model is written on Faster-ILOD/maskrcnn_benchmark/data/datasets/coco.py
 
-### Distillation Loss
+## Distillation Loss
 
 The code for calculating feature, RPN, and RCN distillation losses are written on Faster-ILOD/maskrcnn_benchmark/distillation/distillation.py
 
