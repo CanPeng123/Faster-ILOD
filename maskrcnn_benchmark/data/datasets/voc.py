@@ -282,7 +282,7 @@ class PascalVOCDataset(torch.utils.data.Dataset):
 
 
 def main():
-    data_dir = "/home/s4401040/nas_home/DATA/VOC2007"
+    data_dir = "/home/DATA/VOC2007"
     split = "test"  # train, val, test
     use_difficult = False
     transforms = None
