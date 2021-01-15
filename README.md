@@ -9,21 +9,19 @@ Can Peng, Kun Zhao and Brian C. Lovell; In: Pattern Recognition Letters 2020.
 
 # Installation
 
-This Faster ILOD implementation is based on [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark).
-
-Therefore the installation is the same as the original maskrcnn-benchmark.
+This Faster ILOD implementation is based on [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark). Therefore the installation is the same as the original maskrcnn-benchmark.
 
 Please check INSTALL.md for installation instructions. You may also want to see the original [README.md of maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark/blob/master/README.md).
 
 # Training
 
-## The files used to train Faster ILOD models are under [Faster-ILOD/tools folder](https://github.com/CanPeng123/Faster-ILOD/tree/main/tools).
+The files used to train Faster ILOD models are under [Faster-ILOD/tools folder](https://github.com/CanPeng123/Faster-ILOD/tree/main/tools).
 
 **train_first_step.py**: normally train the first task (standard training). 
 
 **train_incremental.py**: incrementally train the following tasks (knowledge distillation based training).
 
-## The config settings for the models and datasets are under [Faster-ILOD/configs folder](https://github.com/CanPeng123/Faster-ILOD/tree/main/configs).
+The config settings for the models and datasets are under [Faster-ILOD/configs folder](https://github.com/CanPeng123/Faster-ILOD/tree/main/configs).
 
 ### VOC dataset training
 
