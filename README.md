@@ -59,19 +59,16 @@ The code for calculating feature, RPN, and RCN distillation losses are written o
 
 ## Citations
 
-Please consider citing the following paper in your publications if it helps your research. 
+Please consider citing the following paper in your publications if it helps your research.
 
+```latexlatex
 @article{peng2020faster,
-
-  title={Faster ILOD: Incremental Learning for Object Detectors based on Faster RCNN},
-  
-  author={Peng, Can and Zhao, Kun and Lovell, Brian C},
-  
-  journal={Pattern Recognition Letters},
-  
-  year={2020}
-  
+  title={Faster ILOD: Incremental Learning for Object Detectors based on Faster RCNN},  
+  author={Peng, Can and Zhao, Kun and Lovell, Brian C},  
+  journal={Pattern Recognition Letters},  
+  year={2020} 
 }
+```
 
 ## Acknowledgements
 Our Faster ILOD implementation is based on [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark). We thanks the authors for making their code public.
