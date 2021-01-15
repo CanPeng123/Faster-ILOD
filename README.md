@@ -29,15 +29,15 @@ The config settings for the models and datasets are under [Faster-ILOD/configs f
 
 **e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml**: config and dataset settings for target model (ResNet50) trained on VOC dataset.
 
-Put the name of old class categories (all previously trained categories) on NAME_OLD_CLASSES.
+The code for loading VOC dataset to the model is written [Faster-ILOD/maskrcnn_benchmark/data/datasets/voc.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/data/datasets/voc.py).
 
-Put the name of new class categories (categories for current training task) on NAME_NEW_CLASSES.
+Please modify the path for putting VOC dataset on the file [Faster-ILOD/maskrcnn_benchmark/config/paths_catalog.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/config/paths_catalog.py).
 
-Put the name of excluded categories (categories not used, since VOC has 20 categories) on NAME_EXCLUDED_CLASSES.
+Please modify the setting for the name of old class categories (all previously trained categories) on NAME_OLD_CLASSES on the file [e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml).
 
-The code for loading VOC dataset to the model is written [here](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/data/datasets/voc.py).
+Please modify the setting for the name of new class categories (categories for current training task) on NAME_NEW_CLASSES on the file [e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml).
 
-The path for putting VOC dataset is [here](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/config/paths_catalog.py).
+Please modify the setting for the name of excluded categories (categories not used, since VOC has 20 categories) on NAME_EXCLUDED_CLASSES on the file [e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml).
 
 ### COCO dataset training
 
@@ -45,11 +45,11 @@ The path for putting VOC dataset is [here](https://github.com/CanPeng123/Faster-
 
 **e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml**: config and dataset settings for target model (ResNet50) trained on COCO dataset.
 
-The code for loading COCO dataset to the model is written [here](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/data/datasets/coco.py).
+The code for loading COCO dataset to the model is written [Faster-ILOD/maskrcnn_benchmark/data/datasets/coco.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/data/datasets/coco.py).
 
-Please modify the path for putting COCO dataset on file [Faster-ILOD/maskrcnn_benchmark/config/paths_catalog.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/config/paths_catalog.py).
+Please modify the path for putting COCO dataset on the file [Faster-ILOD/maskrcnn_benchmark/config/paths_catalog.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/config/paths_catalog.py).
 
-The categories for COCO dataset training are added in alphabetical orders. Please modify the setting for number of classes (NUM_CLASSES) on file [e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml)
+The categories for COCO dataset training are added in alphabetical orders. Please modify the setting for number of classes (NUM_CLASSES) on the file [e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml)
 
 ## Distillation Loss
 
