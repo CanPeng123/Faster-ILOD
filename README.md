@@ -45,15 +45,15 @@ The path for putting VOC dataset is [here](https://github.com/CanPeng123/Faster-
 
 **e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml**: config and dataset settings for target model (ResNet50) trained on COCO dataset.
 
-Put the number of classes on NUM_CLASSES. The categories are added in alphabetical orders.
-
 The code for loading COCO dataset to the model is written [here](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/data/datasets/coco.py).
 
-The path for putting COCO dataset is [here](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/config/paths_catalog.py).
+Please modify the path for putting COCO dataset on file [Faster-ILOD/maskrcnn_benchmark/config/paths_catalog.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/config/paths_catalog.py).
+
+The categories for COCO dataset training are added in alphabetical orders. Please modify the setting for number of classes (NUM_CLASSES) on file [e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml)
 
 ## Distillation Loss
 
-The code for calculating feature, RPN, and RCN distillation losses are written [here](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/distillation/distillation.py).
+The code for calculating feature, RPN, and RCN distillation losses are written [Faster-ILOD/blob/main/maskrcnn_benchmark/distillation/distillation.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/distillation/distillation.py).
 
 ## Citations
 
