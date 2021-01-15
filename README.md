@@ -15,13 +15,13 @@ Please check INSTALL.md for installation instructions. You may also want to see 
 
 # Training
 
-The files used to train Faster ILOD models are under [Faster-ILOD/tools folder](https://github.com/CanPeng123/Faster-ILOD/tree/main/tools).
+The files used to train Faster ILOD models are under [Faster-ILOD/tools](https://github.com/CanPeng123/Faster-ILOD/tree/main/tools) folder.
 
 **train_first_step.py**: normally train the first task (standard training). 
 
 **train_incremental.py**: incrementally train the following tasks (knowledge distillation based training).
 
-The config settings for the models and datasets are under [Faster-ILOD/configs folder](https://github.com/CanPeng123/Faster-ILOD/tree/main/configs).
+The config settings for the models and datasets are under [Faster-ILOD/configs](https://github.com/CanPeng123/Faster-ILOD/tree/main/configs) folder.
 
 ### VOC dataset training
 
@@ -29,7 +29,7 @@ The config settings for the models and datasets are under [Faster-ILOD/configs f
 
 **e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml**: config and dataset settings for target model (ResNet50) trained on VOC dataset.
 
-The code for loading VOC dataset to the model is written [Faster-ILOD/maskrcnn_benchmark/data/datasets/voc.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/data/datasets/voc.py).
+The code for loading VOC dataset to the model is written on the file [Faster-ILOD/maskrcnn_benchmark/data/datasets/voc.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/data/datasets/voc.py).
 
 Please modify the path for putting VOC dataset on the file [Faster-ILOD/maskrcnn_benchmark/config/paths_catalog.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/config/paths_catalog.py).
 
@@ -39,21 +39,25 @@ Please modify the setting for the name of new class categories (categories for c
 
 Please modify the setting for the name of excluded categories (categories not used, since VOC has 20 categories) on NAME_EXCLUDED_CLASSES on the file [e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml).
 
+Please modify the number of detecting categories on NUM_CLASSES on the file [e2e_faster_rcnn_R_50_C4_1x_Source_model.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Source_model.yaml) (number of old categories) and [e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model.yaml) (number of old and new categories), repectively. 
+
 ### COCO dataset training
 
 **e2e_faster_rcnn_R_50_C4_1x_Source_model_COCO.yaml**: config and dataset settings for source model (ResNet50) trained on COCO dataset.
 
 **e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml**: config and dataset settings for target model (ResNet50) trained on COCO dataset.
 
-The code for loading COCO dataset to the model is written [Faster-ILOD/maskrcnn_benchmark/data/datasets/coco.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/data/datasets/coco.py).
+The code for loading COCO dataset to the model is written on the file [Faster-ILOD/maskrcnn_benchmark/data/datasets/coco.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/data/datasets/coco.py).
 
 Please modify the path for putting COCO dataset on the file [Faster-ILOD/maskrcnn_benchmark/config/paths_catalog.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/config/paths_catalog.py).
 
 The categories for COCO dataset training are added in alphabetical orders. Please modify the setting for number of classes (NUM_CLASSES) on the file [e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml)
 
+Please modify the number of detecting categories on NUM_CLASSES on the file [e2e_faster_rcnn_R_50_C4_1x_Source_model_COCO.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Source_model_COCO.yaml) (number of old categories) and [e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml](https://github.com/CanPeng123/Faster-ILOD/blob/main/configs/e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml) (number of old and new categories), repectively. 
+
 ## Distillation Loss
 
-The code for calculating feature, RPN, and RCN distillation losses are written [Faster-ILOD/blob/main/maskrcnn_benchmark/distillation/distillation.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/distillation/distillation.py).
+The code for calculating feature, RPN, and RCN distillation losses are written on the file [Faster-ILOD/blob/main/maskrcnn_benchmark/distillation/distillation.py](https://github.com/CanPeng123/Faster-ILOD/blob/main/maskrcnn_benchmark/distillation/distillation.py).
 
 ## Citations
 
