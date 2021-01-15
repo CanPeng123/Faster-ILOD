@@ -45,6 +45,8 @@ Put the name of excluded categories (categories not used, since VOC has 20 categ
 
 The code for loading VOC dataset to the model is written on Faster-ILOD/maskrcnn_benchmark/data/datasets/voc.py
 
+The path for putting VOC dataset is on Faster-ILOD/maskrcnn_benchmark/config/paths_catalog.py
+
 ### COCO dataset training
 
 e2e_faster_rcnn_R_50_C4_1x_Source_model_COCO.yaml: config and dataset settings for source model (ResNet50) trained on COCO dataset.
@@ -54,6 +56,8 @@ e2e_faster_rcnn_R_50_C4_1x_Target_model_COCO.yaml: config and dataset settings f
 Put the number of classes on NUM_CLASSES. The categories are added in alphabetical orders.
 
 The code for loading COCO dataset to the model is written on Faster-ILOD/maskrcnn_benchmark/data/datasets/coco.py
+
+The path for putting COCO dataset is on Faster-ILOD/maskrcnn_benchmark/config/paths_catalog.py
 
 ## Distillation Loss
 
