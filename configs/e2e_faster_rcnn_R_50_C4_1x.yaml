@@ -21,11 +21,11 @@ MODEL:
     POOLER_SAMPLING_RATIO: 2
     FEATURE_EXTRACTOR: "ResNet50Conv5ROIFeatureExtractor"
     PREDICTOR: "FastRCNNPredictor"
-    NUM_CLASSES: 20 # total classes : 19 + 1
+    NUM_CLASSES: 16 # total classes : 15 + 1
     NAME_OLD_CLASSES: []
     NAME_NEW_CLASSES: ["aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow", "diningtable", "dog",
-                       "horse", "motorbike", "pottedplant", "sheep", "sofa", "train", "tvmonitor"]
-    NAME_EXCLUDED_CLASSES: ["person"]
+                       "horse", "motorbike", "person"]
+    NAME_EXCLUDED_CLASSES: ["pottedplant", "sheep", "sofa", "train", "tvmonitor"]
 DATASETS:
   TRAIN: ("voc_2007_train", "voc_2007_val")
   TEST: ("voc_2007_test",)
@@ -42,5 +42,5 @@ SOLVER:
   MOMENTUM: 0.9
 TEST: # testing strategy
   IMS_PER_BATCH: 1 # number of images per batch
-OUTPUT_DIR: "/home/incremental_learning_ResNet50_C4/RPN_19_classes_40k_steps_no_person" # path to store the result
-TENSORBOARD_DIR: "/home/incremental_learning_ResNet50_C4/RPN_19_classes_40k_steps_no_person/tensorboard" # path to store tensorboard info
+OUTPUT_DIR: "/home/incremental_learning_ResNet50_C4/RPN_15_classes_40k_steps" # path to store the result
+TENSORBOARD_DIR: "/home/incremental_learning_ResNet50_C4/RPN_15_classes_40k_steps/tensorboard" # path to store tensorboard info
